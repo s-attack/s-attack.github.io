@@ -36,59 +36,12 @@
   </div>
 </nav>
 
-
 <section class="hero">
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Are socially-aware trajectory prediction models </p> really socially-aware?</h1>
-          <div class="is-size-5 publication-authors">            
-            <span class="author-block">
-              <a href="https://people.epfl.ch/saeed.saadatnejad?lang=en">Saeed Saadatnejad*</a></sup>,</span>
-            <span class="author-block">
-              <a href="http://mohammadhossein-bahari.github.io">Mohammadhossein Bahari*</a></sup>,</span>
-            <span class="author-block">
-              <a href="">Pedram Khorsandi</a></sup>,</span>
-            <span class="author-block">
-              <a href="">Mohammad Saneian</a></sup>,</span>
-            <span class="author-block">
-          </div>
-          <div class="is-size-5 publication-authors">         
-              <a href="http://smoosavi.me/"> Seyed-Mohsen Moosavi-Dezfooli</a></sup>,</span>
-            <span class="author-block">
-              <a href="https://people.epfl.ch/alexandre.alahi?lang=en">Alexandre Alahi</a></sup>,
-            </span>           
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"></sup>EPFL, Sharif university of technology, ETH Zurich</span>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">    
-              <!-- arXiv Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2108.10879"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/vita-epfl/s-attack"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-            </div>
-
+          <h1 class="title is-1 publication-title"> S-attack Library: <\p> A library for evaluating trajectory prediction models</h1>
           </div>
         </div>
       </div>
@@ -103,8 +56,50 @@
       <div class="column is-two-thirds">
         <div style="align: left; text-align:center;">
           <img src="./static/figures/pull.PNG" width="550"/>
-          <div class="caption">Given the observation trajectories of the agents in the scene, 
-            a predictor (here S-LSTM) forecasts the future positions reasonably (blue lines). 
+          <div class="caption"> How robust are the trajectory prediction models? This library contains two research projects which assess the trajectory prediction models, Social-attack which evaluates "social" understanding of models, and Scene-attack which evaluates the "scene" understanding of them.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Are socially-aware trajectory prediction models </p> really socially-aware?</h1>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">    
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href="https://s-attack.github.io/social-attack"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Website</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div style="align: left; text-align:center;">
+          <img src="./static/figures/pull.PNG" width="550"/>
+          <div class="caption">Given the observation trajectories of the agents in the scene,
+            a predictor (here S-LSTM) forecasts the future positions reasonably (blue lines).
             However, with less than 5cm perturbation in the observation trajectory (in red),
             an unacceptable collision is predicted.
           </div>
@@ -114,47 +109,49 @@
   </div>
 </section>
 
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"> Vehicle trajectory prediction works, but not everywhere</h1>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href="https://s-attack.github.io/scene-attack"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Website</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
         <div style="align: left; text-align:center;">
-          <video width="100%"  controls>
-            <source src="./static/figures/S-ATTack.mp4" type="video/mp4">
-            Your browser does not support the video tag!
-          </video>
+          <img src="./static/figures/pull2.PNG" width="350"/>
+          <div class="caption">A real-world place in New York where the
+          trajectory prediction model (here LaneGCN) fails. We find this place
+          by retrieving real-world locations which resemble our conditional
+          generated scenes for the prediction model.
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<section class="section">
-  <div class="container">
-
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-two-thirds">
-        <h2 class="title is-2">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Our field has recently witnessed an arms race of neural network-based trajectory predictors. 
-            While these predictors are at the core of many applications such as autonomous navigation or pedestrian flow simulations,
-            their adversarial robustness has not been carefully studied. In this paper, we introduce a socially-attended attack to assess 
-            the social understanding of prediction models in terms of collision avoidance. An attack is a small yet carefully-crafted
-            perturbations to fail predictors. 
-            Technically, we define collision as a failure mode of the output, and propose hard- and soft-attention mechanisms to guide our attack. 
-            Thanks to our attack, we shed light on the limitations of the current models in terms of their social understanding.
-            We demonstrate the strengths of our method on the recent trajectory prediction models. Finally, we show that our attack
-            can be employed to increase the social understanding of state-of-the-art models.
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--/ Abstract. -->
-</section>
-
 
 <section class="section" id="BibTeX">
   <div class="container content">
@@ -163,6 +160,14 @@
   title={Are socially-aware trajectory prediction models really socially-aware?},
   author={Saadatnejad, Saeed and Bahari, Mohammadhossein and Khorsandi, Pedram and Saneian, Mohammad and Moosavi-Dezfooli, Seyed-Mohsen and Alahi, Alexandre},
   year={2021},eprint={2108.10879},archivePrefix={arXiv},primaryClass={cs.CV}
+}</code></pre>
+  </div>
+  <div class="container content">
+  <h2 class="title">BibTeX</h2>
+  <pre><code>@article{bahari2021sattack,
+  title={Vehicle trajectory prediction works, but not everywhere},
+  author={Bahari, Mohammadhossein and Saadatnejad, Saeed and Rahimi, Ahmad and Shaverdikondori, Mohammad and Shahidzadeh, Mohammad and Moosavi-Dezfooli, Seyed-Mohsen and Alahi, Alexandre},
+  year={2021},eprint={},archivePrefix={arXiv},primaryClass={cs.CV}
 }</code></pre>
   </div>
 </section>
